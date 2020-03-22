@@ -8,14 +8,17 @@
 </head>
 
 <body>
-  <h1>How I got this to work</h1>
-  <p>cmd: heroku create -> create the project in heroku, it will give you a .git link</p>
-  <p>cmd: git init </p>
-  <p>cmd: git remote add heroku *paste in the .git link*</p>
-  <p>cmd: git remote -v -> gives you a fetch link and a push link</p>
-  <p>cmd: git add -A</p>
-  <p>cmd: git add -m "commit message"</p>
-  <p>cmd: git push heroku master</p>
+  <h1>How to connect heroku with github with automatic deployment</h1>
+  <p>Github: Create a repo like normal, add/commit/push as usual</p>
+  <p>Command: heroku create -> create the project in heroku, it will give you a .git link</p>
+  <p>Heroku: Deploy tab - Deployment method - Choose github</p>
+  <p>Heroku: connect it to the github repo, and choose the branch to deploy with</p>
+  <p>Heroku: Automatic deploys - Enable automatic deploys</p>
+
+  <h1>Ongoing</h1>
+  <p>git add/commit/push project to development branch</p>
+  <p>Github: create a PR to merge development branch to production branch</p>
+  <p>Changes will automatically updated in Heroku</p>
 </body>
 
 </html>
